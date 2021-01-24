@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    background: linear-gradient(to right, #c04848, #480048);
+    min-height: 100vh
+}
+
+.text-gray {
+    color: #aaa
+}
+
+img.card-img-top {
+    height: 170px;
+    width: 100%;
+    object-fit: fill;
+}
+
+.games-list {
+    justify-content: space-around;
+}
+
+.card {
+    border: none!important;
+    border-radius: 16px!important;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.card-body {
+    padding: 30px 20px 0 20px !important;
+}
+
+span.card-info {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border-radius: 100%;
+    right: 15px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.card-title {
+    font-family: 'DM Serif Display', serif;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0!important;
+    color: rgba(8, 31, 50, 1);
+    padding-bottom: 15px;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 25px;
+    color: #6e798c;
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.tags {
+    padding: 0 0 15px 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tags .tag {
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(165, 173, 187, 1);
+    font-weight: 400;
+    max-width: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: default;
+}
+
+.tag i {
+    font-size: 13px;
+}
+
+
+.card-bottom {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 30px 20px;
+}
+
+.card-prices {
+    flex: 0 0 65%;
+    display: flex;
+    align-items: center;
+    font-family: 'DM Serif Display', serif;
+}
+
+.price {
+    font-size: 28px;
+    line-height: 25px;
+    font-weight: 400;
+    color: rgba(8, 31, 50, 1);
+}
+
+.old-price {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    color: rgba(248, 89, 59, 1);
+    /* text-decoration: line-through; */
+    margin-left: 10px;
+    position: relative;
+}
+
+.old-price::after {
+    border-bottom: 0.7px solid rgba(248, 89, 59, 1);
+    content: "";
+    left: 0;
+    margin-top: calc(0.7px / 2 * -1);
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+
+.card-bottom .order-btn {
+    flex: 0 0 35%;
+    border-radius: 4px;
+    background: rgba(46, 204, 113, 1);
+    border-color: rgba(46, 204, 113, 1);
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+    letter-spacing: 1px;
+}
